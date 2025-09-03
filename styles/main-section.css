@@ -1,0 +1,32 @@
+.main-section{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-top:20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.main-section button{
+  width:auto;
+  height: 91.2px;
+  font-size: 26px;
+  background-color:rgb(83, 83, 83) ;
+  color:white;
+  border-radius: 10px;
+  border: 1px solid gray;
+  outline: none;
+  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+ .main-section button:hover{
+  background-color: rgb(63, 63, 63);
+  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.7);
+  cursor:pointer;
+ }
+
+ .main-section button:active{
+  background-color: rgb(50, 50, 50);
+  box-shadow: 1px 1px 14px rgba(0, 0, 0, 0.9);
+ }

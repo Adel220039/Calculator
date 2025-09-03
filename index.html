@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/all.css">
+  <link rel="stylesheet" href="styles/main-section.css">
+  <link rel="stylesheet" href="styles/upper-section.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <main>
+
+    <section class="calculator">
+
+      <div class="upper-section">
+
+        <div class="historic">
+          <button class="historic-btn">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48ZyBmaWxsPSJub25lIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5IiBmaWxsPSIjZmZmIiBvcGFjaXR5PSIwLjE2Ii8+PHBhdGggc3Ryb2tlPSIjZmZmIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTUuNjM2IDE4LjM2NEE5IDkgMCAxIDAgMyAxMi4wMDRWMTQiLz48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJtMSAxMmwyIDJsMi0ybTYtNHY1aDUiLz48L2c+PC9zdmc+" alt="History">
+          </button>
+          <button class="clear" onclick="clearAll()">AC</button>
+          <div class="history-list">
+            <p>History</p>
+            <ul class="list">
+            </ul>
+          </div>
+        </div>
+
+        <div class="result-section">
+          <p class="formula"></p>
+          <p class="result"></p>
+        </div>
+
+      </div>
+
+      <div class="main-section">
+        <button onclick="deleteIt()">Del</button>
+        <button onclick="getOprator('(')">(</button>
+        <button onclick="getOprator(')')">)</button>
+        <button onclick="getOprator('%')">%</button>
+        <button onclick="getNum('7')">7</button>
+        <button onclick="getNum('8')">8</button>
+        <button onclick="getNum('9')">9</button>
+        <button onclick="getOprator('/')">÷</button>
+        <button onclick="getNum('4')">4</button>
+        <button onclick="getNum('5')">5</button>
+        <button onclick="getNum('6')">6</button>
+        <button onclick="getOprator('*')">x</button>
+        <button onclick="getNum('1')">1</button>
+        <button onclick="getNum('2')">2</button>
+        <button onclick="getNum('3')">3</button>
+        <button onclick="getOprator('-')">-</button>
+        <button onclick="getResult()">=</button>
+        <button onclick="getNum('0')">0</button>
+        <button onclick="getNum('.')">.</button>
+        <button onclick="getOprator('+')">+</button>
+      </div>
+
+    </section>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
